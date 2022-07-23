@@ -45,7 +45,9 @@ this.count++;
       height: 'auto',
       width: '500px',
       autoFocus: false,
+     
     })
+    this.count =0;
   }else{
     const viewdetailsdata = this.MatDialog.open(FailurepopupComponent, {
     
@@ -55,6 +57,7 @@ this.count++;
     })
   }
     }
+   
   }
   back(){
     this._location.back();
