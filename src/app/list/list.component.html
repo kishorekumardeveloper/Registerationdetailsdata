@@ -1,0 +1,154 @@
+<form [formGroup]="form">
+<section class="vh-100" >
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-9">
+
+        <h1 style="text-align:center;">Event Registration</h1>
+
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body">
+
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">Name:</h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+
+                <mat-form-field class="w-100" appearance="outline">
+            
+                  <mat-label>Name</mat-label>
+                  <input
+                    matInput
+                    placeholder="Enter "
+                    formControlName="name"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+
+            <hr class="mx-n3">
+
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">Mobile : </h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Phone Number</mat-label>
+                  <input
+                    matInput
+                    type="number"
+                    placeholder="Enter "
+                    formControlName="phoneno"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+
+            <hr class="mx-n3">
+
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">Email :</h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+
+                <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input
+                  matInput
+               
+                  placeholder="Email "
+                  formControlName="email"
+                />
+              </mat-form-field>
+              </div>
+            </div>
+
+            <hr class="mx-n3">
+
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">Address :</h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Address</mat-label>
+                  <input
+                    matInput
+                   
+                    placeholder="Address "
+                    formControlName="address"
+                  />
+                </mat-form-field>
+
+              </div>
+            </div>
+            <hr class="mx-n3">
+
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">State :</h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>State</mat-label>
+                  <input
+                    matInput
+                   
+                    placeholder="State "
+                    formControlName="State"
+
+                  />
+                </mat-form-field>
+
+              </div>
+            </div>
+            <hr class="mx-n3">
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+
+                <h1 class="mb-0">Country:</h1>
+
+              </div>
+              <div class="col-md-9 pe-5">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Country</mat-label>
+                  <input
+                    matInput
+                
+                    placeholder="Country "
+                    formControlName="Country"
+
+                  />
+                </mat-form-field>
+
+              </div>
+            </div>
+
+            <hr class="mx-n3">
+
+            <div class="px-5 py-4" style="text-align:center">
+              <button  (click)="submit()" type="submit" class="btn btn-primary btn-lg">Register</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+</form>
